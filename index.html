@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Consumption Prediction</title>
+</head>
+<body>
+    <h1>Energy Consumption Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="time">Time (Hour of the day):</label><br>
+        <input type="number" id="time" name="time" required><br><br>
+
+        <label for="temperature">Temperature (°C):</label><br>
+        <input type="number" id="temperature" name="temperature" required><br><br>
+
+        <label for="humidity">Humidity (%):</label><br>
+        <input type="number" id="humidity" name="humidity" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
